@@ -19,7 +19,7 @@ public class CountriesController : ControllerBase
     private readonly IMapper _mapper;
     private readonly ICountriesRepository _countriesRepository;
 
-    public CountriesController(IMapper mapper, ICountriesRepository countriesRepository)
+    public CountriesController(ICountriesRepository countriesRepository, IMapper mapper)
     {
         this._mapper = mapper;
         this._countriesRepository = countriesRepository;
